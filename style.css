@@ -1,0 +1,222 @@
+
+/* * * {
+outline: 1px solid red
+}*/
+
+body{
+    min-height: 100vh;
+    background: hsl(0, 0%, 98%);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.container{
+/*background:lightgray;*/
+display: grid;
+grid-template-columns: 162px 300px 300px 300px 160px;
+grid-auto-rows: 100px;
+grid-gap: 1.5em; 
+justify-content: center;
+align-content: center;
+position: relative;
+justify-items: center;
+}
+
+
+.header {
+    grid-column: 1/6;
+    grid-row: -2/2;
+    justify-content: center;
+    justify-items: stretch;
+    border: none;
+    justify-content: stretch;
+    align-self: end;
+
+}
+
+
+.supervisor{
+border-top: 0.3em solid hsl(180, 62%, 55%);
+grid-column: 2/3;
+grid-row: 3/5;
+max-width: 300px;
+border-radius: 10px;
+background: white;
+position: relative;
+box-shadow: 0px 5px 20px lightgray;
+
+}
+ 
+.teamBuilder{
+border-top: 0.3em solid hsl(0, 78%, 62%);
+grid-column: 3/4;
+grid-row: 2/4;
+max-width: 300px;
+border-radius: 10px;
+background: white;
+position: relative;
+box-shadow: 0px 5px 20px lightgray;
+}
+
+.calculator{
+border-top: 0.3em solid hsl(212, 86%, 64%);
+grid-column: 4/5;
+grid-row: 3/5;
+max-width: 300px;
+border-radius: 10px;
+background: white;
+position: relative;
+box-shadow: 0px 5px 20px lightgray;
+}
+
+.karma{
+border-top: 0.3em solid hsl(34, 97%, 64%);
+grid-column: 3/4;
+grid-row: 4/6;
+max-width: 300px;
+border-radius: 10px;
+background: white;
+position: relative;
+box-shadow: 0px 5px 20px lightgray;
+}
+
+
+/*header*/
+.line1{
+font-family: 'Poppins', sans-serif;
+font-weight: 200;
+text-align: center;
+color: rgb(66, 66, 66);
+margin:0;
+
+}
+.line2{
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+text-align: center;
+color: rgb(66, 66, 66);
+margin:0;
+}
+.line3{
+font-family: 'Poppins', sans-serif;
+font-weight: 200;
+text-align: center;
+color: gray;
+font-size: small;
+}
+    
+.divline3{
+  max-width: 450px;  
+}
+
+
+/*item body*/
+.item_title{
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 15px;
+text-align: left;
+margin-left: 1em;
+margin-right: 1em;
+margin-top: 1em;
+margin-bottom: 1em;
+}
+.item_content{
+font-family: 'Poppins', sans-serif;
+font-weight: 200;
+font-size: small;
+text-align: left;
+color: gray;
+margin-left: 1em;
+margin-right: 1em;
+margin-top: 1em;
+margin-bottom: 1em;
+}
+.logo{
+width:auto;
+height:auto;
+position: absolute;
+right: 0;
+bottom: 0;
+margin-right: 1em;
+margin-bottom: 1em;;   
+}
+
+@media screen and (max-width:600px){
+    body{
+        display:flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        /*background:lightgray;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;   
+        }
+        
+        .supervisor{
+        border-top: 0.3em solid hsl(180, 62%, 55%);
+        max-height:13.75em; 
+        min-height: 13.75em;
+        max-width: 18.75em;
+        min-width: 18.75em;
+        border-radius: 10px;
+        background: white;
+        position: relative;
+        box-shadow: 0px 5px 20px lightgray;
+        order: 1;
+        
+        }
+         
+        .teamBuilder{
+        border-top: 0.3em solid hsl(0, 78%, 62%);
+        max-height:13.75em; 
+        min-height: 13.75em;
+        max-width: 18.75em;
+        min-width: 18.75em;
+        border-radius: 10px;
+        background: white;
+        position: relative;
+        box-shadow: 0px 5px 20px lightgray;
+        order: 2;
+        }
+        
+        .calculator{
+        border-top: 0.3em solid hsl(212, 86%, 64%);
+        max-height:13.75em; 
+        min-height: 13.75em;
+        max-width: 18.75em;
+        min-width: 18.75em;
+        border-radius: 10px;
+        background: white;
+        position: relative;
+        box-shadow: 0px 5px 20px lightgray;
+        order: 4;
+        }
+        
+        .karma{
+        border-top: 0.3em solid hsl(34, 97%, 64%);
+        max-height:13.75em; 
+        min-height: 13.75em;
+        max-width: 18.75em;
+        min-width: 18.75em;
+        border-radius: 10px;
+        background: white;
+        position: relative;
+        box-shadow: 0px 5px 20px lightgray;
+        order: 3;
+        }
+       
+        .divline3{
+            max-width: 250px; 
+            align-self: center;
+            margin-left: 1em;
+          }
+}
